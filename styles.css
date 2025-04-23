@@ -75,6 +75,9 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section img {
@@ -82,6 +85,11 @@ section img {
     height: auto;
     border-radius: 5px;
     margin: 10px 0;
+}
+
+.section-content {
+    max-width: 800px;
+    text-align: center;
 }
 
 footer {
@@ -99,20 +107,18 @@ footer p {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media (min-width: 768px) {
+    section {
+        flex-direction: row;
+        align-items: flex-start;
     }
 
-    nav a {
-        margin: 10px 0;
+    section img {
+        max-width: 300px; /* Limita a largura da imagem em telas maiores */
+        margin-right: 20px; /* Espaço entre a imagem e o texto */
     }
 
-    .theme-toggle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .section-content {
+        text-align: left; /* Alinha o texto à esquerda em telas maiores */
     }
 }
