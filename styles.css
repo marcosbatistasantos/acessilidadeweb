@@ -121,4 +121,26 @@ footer p {
     .section-content {
         text-align: left; /* Alinha o texto à esquerda em telas maiores */
     }
+
+    /* Adicione isso ao seu styles.css */
+
+/* Alto Contraste */
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast a {
+    color: #ff0; /* Links em amarelo para melhor visibilidade */
+}
+
+/* Modo Escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode a {
+    color: #bb86fc; /* Links em roxo claro */
+}
 }
